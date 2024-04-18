@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`px-[24px] md:px-[80px] z-40 py-[25px] shadow-2xl shadow-blue-900/20 flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
+      className={`px-[24px] md:px-[80px] z-40 py-[25px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
       <Link to="/" className="flex items-center gap-2.5 cursor-pointer">
         <img src={logo} alt="Propellent Logo" className="w-[50px] h-[50px]" />
@@ -46,7 +46,8 @@ const Navbar = () => {
       </div>
 
       <Link
-        to="/"
+        to="https://andrea-montini.lemonsqueezy.com/"
+        target="_blank"
         className="text-base hidden leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-lg px-[18px] py-2.5 md:flex items-center justify-center max-w-max"
       >
         Get Template

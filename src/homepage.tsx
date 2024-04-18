@@ -10,7 +10,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col pt-[66px] md:pt-[80px]">
+    <div className="w-full h-[85vh] bg-slate-50 flex flex-col pt-[66px] md:pt-[80px]">
       
     </div>
   );
