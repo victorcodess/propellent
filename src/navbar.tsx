@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "./assets/logo.svg";
 
 const Navbar = () => {
   const [navbarVisible, setNavbarVisible] = useState<boolean>(false);
@@ -7,88 +8,125 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`px-[40px] md:px-[130px] z-40 py-[18px] shadow-2xl shadow-blue-900/20 flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
+      className={`px-[24px] md:px-[80px] z-40 py-[25px] shadow-2xl shadow-blue-900/20 flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
-      <Link
-        to="/"
-        className="text-[20px] md:text-[30px] md:font-bold font-medium text-[#333333]"
-      >
-        Codepad
+      <Link to="/" className="flex items-center gap-2.5 cursor-pointer">
+        <img src={logo} alt="Propellent Logo" className="w-[50px] h-[50px]" />
+
+        <h2 className="text-[22px] leading-[24.2px] tracking-[-0.6px] poppins-medium">
+          Propellent
+        </h2>
       </Link>
 
-      <div className="md:flex items-center justify-center gap-14 hidden">
+      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium">
         <Link
-          to="/products"
-          className="text-[16px] leading-[24px] font-medium text-[#333333] cursor-pointer"
+          to="/#benefits"
+          className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
+        >
+          Benefits
+        </Link>
+        <Link
+          to="/#products"
+          className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
         >
           Products
         </Link>
         <Link
-          to="/about-us"
-          className="text-[16px] leading-[24px] font-medium text-[#333333] cursor-pointer"
+          to="/#testimonials"
+          className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
         >
-          About
+          Testimonials
         </Link>
-
         <Link
-          to="/contact-us"
-          className="text-[16px] leading-[24px] font-medium text-[#333333] cursor-pointer"
+          to="/#faqs"
+          className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
         >
-          Contact
+          FAQs
         </Link>
       </div>
 
+      <Link
+        to="/"
+        className="text-base hidden leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-lg px-[18px] py-2.5 md:flex items-center justify-center max-w-max"
+      >
+        Get Template
+      </Link>
+
       {navbarVisible ? (
         <svg
-          className="md:hidden cursor-pointer w-6 h-6"
+          width="100%"
+          height="1.5em"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="100"
-          height="100"
-          viewBox="0 0 50 50"
+          color="rgb(0, 0, 0)"
+          className="md:hidden cursor-pointer w-10 h-10"
           onClick={() => setNavbarVisible(!navbarVisible)}
         >
-          <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+          <path
+            d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
         </svg>
       ) : (
         <svg
-          className="md:hidden cursor-pointer"
-          fill="currentColor"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          stroke-width="1.5"
           viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          color="rgb(0, 0, 0)"
+          className="md:hidden cursor-pointer w-10 h-10"
           onClick={() => setNavbarVisible(!navbarVisible)}
         >
-          <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+          <path
+            d="M3 5h18M3 12h18M3 19h18"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
         </svg>
       )}
 
       <div
-        className={`pb-[5px] transition duration-300 ease-in-out ${
-          navbarVisible ? "top-[66px]" : "-top-[300px]"
-        } shadow-2xl shadow-blue-900/20 flex flex-col items-center justify-between w-full left-0 absolute bg-white px-10 md:hidden`}
+        className={`pb-[5px] transition-all ${
+          navbarVisible ? "top-[99px]" : "-top-[400px] "
+        } shadow-[0px_23px_30px_0px_rgba(0,0,0,0.1)] flex flex-col items-center justify-between w-full gap-10 left-0 absolute  bg-white px-6 md:hidden pt-4 pb-10`}
       >
-        <Link
-          to="/products"
-          className="text-[16px] leading-[24px] font-normal text-[#333333] cursor-pointer text-left w-full border-b py-3 hover:text-green-500 transition-colors"
-        >
-          Products
-        </Link>
-        <Link
-          to="/about-us"
-          className="text-[16px] leading-[24px] font-normal text-[#333333] cursor-pointer text-left w-full border-b py-3 hover:text-green-500 transition-colors"
-        >
-          About
-        </Link>
+        <div className="max-w-max flex flex-col items-center justify-center gap-[33px] be-vietnam-pro-medium">
+          <Link
+            to="/#benefits"
+            className="text-[20px] leading-[27px] tracking-[-0.4px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
+          >
+            Benefits
+          </Link>
+          <Link
+            to="/#products"
+            className="text-[20px] leading-[27px] tracking-[-0.4px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
+          >
+            Product
+          </Link>
+          <Link
+            to="/#testimonials"
+            className="text-[20px] leading-[27px] tracking-[-0.4px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
+          >
+            Testimonials
+          </Link>
+          <Link
+            to="/#faqs"
+            className="text-[20px] leading-[27px] tracking-[-0.4px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
+          >
+            FAQs
+          </Link>
+        </div>
 
         <Link
-          to="/contact-us"
-          className="text-[16px] leading-[24px] font-normal text-[#333333] cursor-pointer text-left w-full py-3 hover:text-green-500 transition-colors"
+          to="/"
+          className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-lg px-[18px] py-[14px] flex items-center justify-center w-full"
         >
-          Contact
+          Get Template
         </Link>
       </div>
     </nav>
