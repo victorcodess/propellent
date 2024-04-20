@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`px-[24px] md:px-[80px] z-40 py-[25px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
+      className={`px-[24px] md:px-[80px] z-40 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
       <Link to="/" className="flex items-center gap-2.5 cursor-pointer">
         <img src={logo} alt="Propellent Logo" className="w-[50px] h-[50px]" />
@@ -18,7 +18,7 @@ const Navbar = () => {
         </h2>
       </Link>
 
-      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium">
+      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px]">
         <Link
           to="/#benefits"
           className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
@@ -29,7 +29,7 @@ const Navbar = () => {
           to="/#products"
           className="text-[16px] leading-[21.6px] tracking-[-0.32px] font-medium text-[#000] cursor-pointer hover:text-[#878787] transition-all"
         >
-          Products
+          Product
         </Link>
         <Link
           to="/#testimonials"
