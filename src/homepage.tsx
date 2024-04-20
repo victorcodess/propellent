@@ -263,7 +263,7 @@ const Homepage = () => {
           </div>
 
           <div className=" mt-10 md:mt-[60px] flex flex-col md:flex-row gap-10 items-center justify-center">
-            <div className="flex flex-col p-[32px]  bg-[#bdff1c] rounded-[24px] items-start gap-[40px] justify-end  relative w-full h-[450px] md:w-[421px]">
+            <div className="flex flex-col p-[32px]  bg-[#bdff1c] rounded-[24px] items-start gap-[40px] justify-end  relative w-full h-[450px] md:min-w-[421px]">
               <img
                 src={sell}
                 alt=""
@@ -298,11 +298,11 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col md:gap-0 rounded-[24px] items-start gap-[40px] justify-between w-full h-[450px] md:w-[357px]">
+              <div className="flex flex-col md:gap-0 rounded-l-[24px] items-start gap-[40px] justify-between w-full h-[450px] md:w-[357px]">
                 <img
                   src={integrated}
                   alt=""
-                  className="w-full sm:w-[357px] h-[317px] object-cover rounded-[24px]"
+                  className="w-full sm:w-[357px] h-[317px] object-cover rounded-l-[24px]"
                 />
                 <div className="w-full flex flex-col items-start gap-3">
                   <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
