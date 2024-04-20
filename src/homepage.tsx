@@ -212,7 +212,7 @@ const Homepage = () => {
 
       <section
         id="product"
-        className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[152px] gap-[80px] border"
+        className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[152px] gap-[80px]"
       >
         <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
           <div className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]">
