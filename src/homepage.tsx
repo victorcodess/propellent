@@ -2,6 +2,7 @@
 import arrow from "./assets/arrow.svg";
 import stars from "./assets/stars.svg";
 import StartupCarousel from "./startup-carousel";
+import fingerprint from "./assets/fingerprint.svg"
 
 const Homepage = () => {
   // useEffect(() => {
@@ -14,7 +15,7 @@ const Homepage = () => {
 
   return (
     <div className="w-full min-h-[85vh] bg-white flex flex-col pt-[66px] md:pt-[66px]">
-      <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col  justify-center gap-40 w-full px-5 md:pl-[152px] md:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
+      <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col justify-center gap-40 w-full px-5 md:pl-[152px] md:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
         <div className="flex items-center flex-col md:flex-row justify-center gap-0 w-full relative">
           <div className="w-full flex flex-col items-center justify-center gap-6 md:items-start relative">
             <div className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50">
@@ -142,6 +143,60 @@ const Homepage = () => {
           alt=""
           className="absolute w-[301px] top-[776px] right-[-35px] md:top-[446px] md:left-[1175px] rotate-[-30deg]"
         />
+      </section>
+
+      <section className="pt-[80px] pb-[190px] md:pt-[120px] md:pb-[150px] bg-white w-full px-[24px] md:px-[178px] flex flex-col border">
+        <div className="flex flex-col items-center gap-[60px]">
+          <div className="flex flex-col items-center gap-5 md:w-[800px]">
+            <h1 className="w-[669px] poppins-medium text-[50px] leading-[60px] tracking-[-2px] md:text-[56px] md:leading-[67.2px] text-center text-[#0f1728]">
+              Good-bye to traditional startup hassle.
+            </h1>
+            <p className="font-normal text-[18px] leading-[24.3px] text-center tracking-[-0.54px] md:text-[20px] md:leadng-[27px] md:tracking-[-0.6px] text-[#475466]">
+              Say farewell to the complexities of the past and unlock a smoother
+              path to success. Welcome to a new era of simplicity and
+              efficiency.
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-[24px] w-full">
+            <div className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]">
+              <img src={fingerprint} alt="" className="w-16 h-16" />
+              <div className="w-full flex flex-col items-start gap-2">
+                <h3 className="font-medium text-[26px] leading-[31.2px] tracking-[-1px] text-[#0f1728]">
+                  Optimize your daily operations
+                </h3>
+                <p className="font-normal leading-[21.6px] text-base tracking-[-0.32px] text-black/50">
+                  Our software simplifies complex business processes, helping
+                  you efficiently manage tasks, projects, and resources.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]">
+              <img src={fingerprint} alt="" className="w-16 h-16" />
+              <div className="w-full flex flex-col items-start gap-2">
+                <h3 className="font-medium text-[26px] leading-[31.2px] tracking-[-1px] text-[#0f1728]">
+                  Optimize your daily operations
+                </h3>
+                <p className="font-normal leading-[21.6px] text-base tracking-[-0.32px] text-black/50">
+                  Our software simplifies complex business processes, helping
+                  you efficiently manage tasks, projects, and resources.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]">
+              <img src={fingerprint} alt="" className="w-16 h-16" />
+              <div className="w-full flex flex-col items-start gap-2">
+                <h3 className="font-medium text-[26px] leading-[31.2px] tracking-[-1px] text-[#0f1728]">
+                  Optimize your daily operations
+                </h3>
+                <p className="font-normal leading-[21.6px] text-base tracking-[-0.32px] text-black/50">
+                  Our software simplifies complex business processes, helping
+                  you efficiently manage tasks, projects, and resources.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

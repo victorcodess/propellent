@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
