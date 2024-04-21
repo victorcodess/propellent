@@ -9,6 +9,9 @@ import earn from "./assets/earn.svg";
 import sell from "./assets/sell.svg";
 import secure from "./assets/secure.png";
 import integrated from "./assets/integrated.png";
+import TestimonialCarouselMobile from "./testimonial-carousel-mobile";
+import TestimonialCarouselDesktop from "./testimonial-carousel-desktop";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   // useEffect(() => {
@@ -212,7 +215,7 @@ const Homepage = () => {
 
       <section
         id="product"
-        className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[152px] gap-[80px]"
+        className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[152px] gap-[80px] relative"
       >
         <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
           <div className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]">
@@ -398,6 +401,75 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+
+        <div
+          id="testimonials"
+          className="absolute w-4 h-4 bg-black bottom-20 opacity-0"
+        />
+      </section>
+
+      <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[56px] gap-[60px] md:gap-[80px] relative">
+        <div className="w-full flex flex-col gap-[45px] items-center pb-[60px] md:pb-[120px]">
+          <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
+            <div className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]">
+              <h4 className="ibm-plex-mono-semibold uppercase text-black text-[12px] leading-[13.2px] text-center tracking-[1.2px]">
+                Metrics
+              </h4>
+            </div>
+            <h1 className="w-full sm:w-[669px] poppins-medium text-[40px] leading-[48px] tracking-[-1.2px] md:text-[44px] md:leading-[52.8px] text-center text-[#0f1728] md:w-full">
+              You can bet on it
+            </h1>
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8">
+            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r">
+              <h2 className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]">
+                75%
+              </h2>
+              <p className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]">
+                Candidate match rate
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r">
+              <h2 className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]">
+                4,000+
+              </h2>
+              <p className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]">
+                Successful placement
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 items-center w-full md:w-[445px]">
+              <h2 className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]">
+                50+
+              </h2>
+              <p className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]">
+                Operating countries
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col items-center gap-[80px]">
+          <div className="text-[40px] leading-[42px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium">
+            <h3 className="text-[#a3a6ae]">Real stories.</h3>
+            <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
+              Don’t take our word for it.
+            </h3>
+          </div>
+          <div className="flex w-full md:hidden items-center">
+            <TestimonialCarouselMobile />
+          </div>
+          <div className="hidden md:flex w-full items-center">
+            <TestimonialCarouselDesktop />
+          </div>
+        </div>
+
+        <Link
+          to="/"
+          className="text-base mt-[-20px] leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-full px-[18px] py-[14px] md:px-5 flex items-center justify-center w-full md:max-w-max"
+        >
+          Read all stories
+        </Link>
       </section>
     </div>
   );
