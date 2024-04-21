@@ -422,7 +422,7 @@ const Homepage = () => {
           </div>
 
           <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8">
-            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r">
+            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r border-[#B9BED1]">
               <h2 className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]">
                 75%
               </h2>
@@ -430,7 +430,7 @@ const Homepage = () => {
                 Candidate match rate
               </p>
             </div>
-            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r">
+            <div className="flex flex-col gap-3 items-center w-full md:w-[445px] border-r border-[#B9BED1]">
               <h2 className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]">
                 4,000+
               </h2>
@@ -450,11 +450,13 @@ const Homepage = () => {
         </div>
 
         <div className="w-full flex flex-col items-center gap-[80px]">
-          <div className="text-[40px] leading-[42px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium">
+          <div className="text-[40px] leading-[42px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative">
             <h3 className="text-[#a3a6ae]">Real stories.</h3>
             <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
               Don’t take our word for it.
             </h3>
+
+            <img src="https://framerusercontent.com/images/VL43VhHmWPuTeXXKbTYxdaAoyU.png?scale-down-to=512" alt="" className="absolute w-[152px] hidden md:block top-[-30.5px] right-[223px] rotate-[-43deg]" />
           </div>
           <div className="flex w-full md:hidden items-center">
             <TestimonialCarouselMobile />

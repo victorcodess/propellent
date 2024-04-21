@@ -12,7 +12,7 @@ const Footer = () => {
         </h2>
       </Link>
 
-      <div className="w-full flex items-center justify-center gap-[5px] be-vietnam-pro-regular text- text-[16px] leading-[23.2px] tracking-[-0.32px]">
+      <div className="w-full flex items-center justify-center gap-[5px] be-vietnam-pro-regular md:text-[14px] md:leading-[18.9px] md:tracking-[-0.28px] text-[16px] leading-[23.2px] tracking-[-0.32px]">
         <p>
           Design by
           <a href="https://twitter.com/AndreaMontini" target="_blank" className="underline text-[#878787] hover:text-black hover:no-underline transition-all cursor-pointer duration-300 ml-[5px]">
