@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`px-[24px] md:px-[80px] z-40 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
+      className={`px-[24px] md:px-[80px] z-50 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
       <Link
         to="#hero"
