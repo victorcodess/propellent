@@ -13,6 +13,7 @@ import TestimonialCarouselMobile from "./testimonial-carousel-mobile";
 import TestimonialCarouselDesktop from "./testimonial-carousel-desktop";
 import { Link } from "react-router-dom";
 import Accordion from "./accordion";
+import { useRef } from "react";
 
 const Homepage = () => {
   // useEffect(() => {
@@ -22,6 +23,7 @@ const Homepage = () => {
   //     behavior: "smooth",
   //   });
   // }, []);
+  const targetRef = useRef(null);
 
   return (
     <div
@@ -450,7 +452,10 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center gap-[80px]">
+        <div
+          ref={targetRef}
+          className="w-full flex flex-col items-center gap-[80px]"
+        >
           <div className="text-[40px] leading-[42px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative">
             <h3 className="text-[#a3a6ae]">Real stories.</h3>
             <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
@@ -467,7 +472,7 @@ const Homepage = () => {
             <TestimonialCarouselMobile />
           </div>
           <div className="hidden md:flex w-full items-center">
-            <TestimonialCarouselDesktop />
+            <TestimonialCarouselDesktop targetRef={targetRef} />
           </div>
         </div>
 

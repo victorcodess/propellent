@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.47",
+    "framer-motion": "^11.0.3",
+    "lenis": "^1.0.44",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",

@@ -1,7 +1,23 @@
-const TestimonialCarouselDesktop = () => {
+import { motion, useScroll, useTransform } from "framer-motion";
+import { RefObject } from "react";
+// import { useCallback, useLayoutEffect, useRef, useState } from "react";
+
+interface TestimonialCarouselDesktopProps {
+  targetRef: RefObject<HTMLElement>;
+}
+
+const TestimonialCarouselDesktop = (
+  targetRef: TestimonialCarouselDesktopProps
+) => {
+  const { scrollYProgress } = useScroll({
+    target: targetRef.targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["-40%", "1%"]);
+
   return (
     <div className="flex flex-col items-start pl-[68px] w-full overflow-hidden">
-      <div className="flex gap-10">
+      <motion.div style={{ x }} className="flex gap-10">
         <div className="flex flex-row gap-[40px] items-center  justify-center bg-white p-[40px] rounded-[16px] w-[1000px] relative ">
           <img
             src="https://framerusercontent.com/images/jCl7IxnOEN5iV2G3osyfKLdVdoU.jpg?scale-down-to=512"
@@ -48,22 +64,22 @@ const TestimonialCarouselDesktop = () => {
 
           <div className="flex flex-col items-start justify-between w-full gap-6">
             <h4 className="text-[32px] leading-[38.4px] tracking-[-1px] text-[#050505] w-full poppins-medium">
-            "As a fast-growing startup, we needed an efficient way to find
-            skilled professionals from various regions. This AI tool exceeded
-            our expectations."
+              "As a fast-growing startup, we needed an efficient way to find
+              skilled professionals from various regions. This AI tool exceeded
+              our expectations."
             </h4>
 
             <div className="flex flex-col gap-1">
               <h5 className="text-[18px] leading-[28px] text-[#0f1728] font-semibold">
-              Luke Skywalker
+                Luke Skywalker
               </h5>
               <p className="leading-[24px] text-[#475466]">
-              Digital Manager @ ABC Inc.
+                Digital Manager @ ABC Inc.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
