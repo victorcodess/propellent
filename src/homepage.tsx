@@ -1,4 +1,3 @@
-// import { useEffect } from "react";
 import arrow from "./assets/arrow.svg";
 import stars from "./assets/stars.svg";
 import StartupCarousel from "./startup-carousel";
@@ -14,6 +13,9 @@ import TestimonialCarouselDesktop from "./testimonial-carousel-desktop";
 import { Link } from "react-router-dom";
 import Accordion from "./accordion";
 import { useRef } from "react";
+import { useEffect } from "react";
+import { cubicBezier, motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Homepage = () => {
   // useEffect(() => {
@@ -25,6 +27,28 @@ const Homepage = () => {
   // }, []);
   const targetRef = useRef(null);
 
+  const formEasing = cubicBezier(0.44, 0, 0.22, 0.99);
+
+  const formVariants = {
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.3, ease: formEasing },
+    },
+    hidden: { opacity: 0 },
+  };
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  console.log(inView);
+
+  useEffect(() => {
+    if (inView) {
+      console.log("in view");
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <div
       id="hero"
@@ -33,7 +57,26 @@ const Homepage = () => {
       <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col justify-center gap-40 w-full px-5 md:pl-[152px] md:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
         <div className="flex items-center flex-col md:flex-row justify-center gap-10 w-full relative">
           <div className="w-full flex flex-col items-center justify-center gap-6 md:items-start relative">
-            <div className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50">
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 30,
+                    stiffness: 180,
+                    mass: 1,
+                    delay: 0.2,
+                  },
+                },
+                hidden: { opacity: 0, y: 10 },
+              }}
+              className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50"
+            >
               <div className="rounded-full flex items-center justify-center absolute md:left-[6px] left-[40%] ri ght-0 max-w-min mx-auto group-hover:left-[6px] group-hover:rig ht-auto duration-300 transition-all z-30 bg-[#bdff1c] py-1 px-2.5">
                 <h4 className="be-vietnam-pro-semibold leading-[21.6px] text-base text-black tracking-[-0.32px]">
                   Updates
@@ -53,25 +96,92 @@ const Homepage = () => {
                 alt=""
                 className="w-3 h-3 z-40 opacity-0 group-hover:opacity-100 duration-300"
               />
-            </div>
+            </motion.div>
 
-            <h1 className="text-[45px] leading-[47.25px] md:text-[72px] md:leading-[75.6px] tracking-[-2px] md:tracking-[-3px] poppins-medium text-center md:text-left md:w-[610px] z-20">
+            <motion.h1
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.8,
+                    ease: cubicBezier(0.44, 0, 0, 1),
+                  },
+                },
+                hidden: { opacity: 0, y: 50 },
+              }}
+              className="text-[45px] leading-[47.25px] md:text-[72px] md:leading-[75.6px] tracking-[-2px] md:tracking-[-3px] poppins-medium text-center md:text-left md:w-[610px] z-20"
+            >
               Ease your mind on business operations.
-            </h1>
+            </motion.h1>
 
-            <img
+            <motion.img
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 100,
+                    stiffness: 300,
+                    mass: 1,
+                    delay: 0.3,
+                  },
+                },
+                hidden: { opacity: 0, y: 20 },
+              }}
               src="https://framerusercontent.com/images/aTjtJJGxuy3avHrtmudaw8F06g.png?scale-down-to=512"
               alt=""
               className="z-10 absolute w-[186px] top-[84px] left-[-16px] hidden md:block"
             />
 
-            <p className="be-vietnam-pro-medium text-[#475466] text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]">
+            <motion.p
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.8,
+                    delay: 0.2,
+                    ease: cubicBezier(0.44, 0, 0, 1),
+                  },
+                },
+                hidden: { opacity: 0, y: 50 },
+              }}
+              className="be-vietnam-pro-medium text-[#475466] text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]"
+            >
               From intuitive task management to advanced data analytics, our
               software equips you with the tools you need to thrive in today's
               competitive business landscape.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col md:flex-row gap-4 md:gap-1.5 items-center">
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial="hidden"
+              variants={{
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.8,
+                    delay: 0.3,
+                    ease: cubicBezier(0.44, 0, 0, 1),
+                  },
+                },
+                hidden: { opacity: 0, y: 50 },
+              }}
+              className="flex flex-col md:flex-row gap-4 md:gap-1.5 items-center"
+            >
               <div className="flex w-[108px] h-[37px] relative">
                 <img
                   src="https://framerusercontent.com/images/PUja2jlMhB77g7YskLJxlVzkBAA.jpg?scale-down-to=512"
@@ -96,10 +206,16 @@ const Homepage = () => {
               </div>
 
               <img src={stars} alt="" className="w-[116px]" />
-            </div>
+            </motion.div>
           </div>
 
-          <div className="bg-[#fdffff] w-full px-[32px] py-[40px] flex flex-col gap-6 shadow-[5px_25px_25px_0px_rgba(0,0,0,0.1)] rounded-[24px] items-center md:max-w-min z-10">
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            variants={formVariants}
+            className="bg-[#fdffff] w-full px-[32px] py-[40px] flex flex-col gap-6 shadow-[5px_25px_25px_0px_rgba(0,0,0,0.1)] rounded-[24px] items-center md:max-w-min z-10"
+          >
             <div className="flex flex-col gap-3 w-full items-center justify-center md:w-[392px]">
               <h3 className="be-vietnam-pro-medium text-[26px] leading-[31.2px] tracking-[-1px] text-center text-[#0f1728]">
                 Secure your spot now
@@ -143,17 +259,51 @@ const Homepage = () => {
                 Terms of License
               </span>
             </p>
-          </div>
+          </motion.div>
         </div>
 
         <StartupCarousel />
 
-        <img
+        <motion.img
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 100,
+                stiffness: 300,
+                mass: 1,
+                delay: 0.5,
+              },
+            },
+            hidden: { opacity: 0, y: 20 },
+          }}
           src="https://framerusercontent.com/images/uTKvR6qfTzsBtXOvlLGL21I53YY.png?scale-down-to=512"
           alt=""
           className="absolute hidden md:block w-[271px] top-[106px] right-[455px]"
         />
-        <img
+        <motion.img
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={{
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 100,
+                stiffness: 300,
+                mass: 1,
+                delay: 0.7,
+              },
+            },
+            hidden: { opacity: 0, y: 30 },
+          }}
           src="https://framerusercontent.com/images/AM9PX8l3tcHV41oVhZ9gWUkBSE.png?scale-down-to=512"
           alt=""
           className="absolute w-[301px] top-[776px] right-[-35px] md:top-[446px] md:left-[1175px] rotate-[-30deg]"
