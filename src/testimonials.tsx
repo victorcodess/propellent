@@ -8,7 +8,7 @@ const Testimonials = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[56px] gap-[60px] md:gap-[80px] relative">
+    <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[30px] md:px-[56px] gap-[60px] md:gap-[80px] relative">
       <div className="w-full flex flex-col gap-[45px] items-center pb-[60px] md:pb-[120px]">
         <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
           <motion.div
@@ -213,7 +213,7 @@ const Testimonials = () => {
           className="text-[40px] leading-[42px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative"
         >
           <h3 className="text-[#a3a6ae]">Real stories.</h3>
-          <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
+          <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px] text-center md:text-left">
             Don’t take our word for it.
           </h3>
 
@@ -236,15 +236,15 @@ const Testimonials = () => {
             className="absolute w-[152px] hidden md:block top-[-30.5px] right-[223px] rotate-[-43deg]"
           />
         </motion.div>
-        <div className="fl ex hidden w-full md:hidden items-center">
+        <div className="flex md:hidden w-full items-center">
           <TestimonialCarouselMobile />
         </div>
-        <div className="hid den md: flex w-full items-center">
+        <div className="hidden md:flex w-full items-center">
           <TestimonialCarouselDesktop />
         </div>
       </div>
 
-      <Link to="/" className="">
+      <Link to="/" className="w-full flex items-center justify-center">
         <motion.button
           initial={{ opacity: 0, y: 30 }}
           whileInView={{
