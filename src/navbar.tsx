@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.svg";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navbarVisible, setNavbarVisible] = useState<boolean>(false);
@@ -20,7 +21,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav
+    <motion.nav
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          duration: 1,
+          ease: [0.44, 0, 0, 1],
+        },
+      }}
+      viewport={{
+        amount: "all",
+        once: true,
+      }}
       id="navbar"
       className={`px-[24px] md:px-[80px] z-50 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
@@ -79,7 +92,7 @@ const Navbar = () => {
         <svg
           width="100%"
           height="1.5em"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -90,13 +103,13 @@ const Navbar = () => {
           <path
             d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
       ) : (
         <svg
-          stroke-width="1.5"
+          strokeWidth="1.5"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -107,8 +120,8 @@ const Navbar = () => {
           <path
             d="M3 5h18M3 12h18M3 19h18"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
       )}
@@ -156,7 +169,7 @@ const Navbar = () => {
           Get Template
         </Link>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

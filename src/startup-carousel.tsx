@@ -5,10 +5,26 @@ import splice from "./assets/Splice@4x.png";
 import spotify from "./assets/Spotify@4x.png";
 import tesla from "./assets/Tesla@4x.png";
 import todoist from "./assets/Todoist@4x.png";
+import { motion } from "framer-motion";
 
 const StartupCarousel = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-4 absolute bottom-[10px] md:bottom-[50px] px-[60px] hid den">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          duration: 0.6,
+          delay: 0.2,
+          ease: [0.44, 0, 0.56, 1],
+        },
+      }}
+      viewport={{
+        amount: "some",
+        once: true,
+      }}
+      className="w-full flex flex-col items-center justify-center gap-4 absolute bottom-[10px] md:bottom-[50px] px-[60px] hid den"
+    >
       <h4 className="text-[20px] text-[#68708c] leading-[27px] tracking-[-0.5px]">
         Join other tech leaders:
       </h4>
@@ -92,7 +108,7 @@ const StartupCarousel = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

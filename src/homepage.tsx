@@ -13,9 +13,7 @@ import TestimonialCarouselDesktop from "./testimonial-carousel-desktop";
 import { Link } from "react-router-dom";
 import Accordion from "./accordion";
 import { useRef } from "react";
-import { useEffect } from "react";
-import { cubicBezier, motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Homepage = () => {
   // useEffect(() => {
@@ -27,28 +25,6 @@ const Homepage = () => {
   // }, []);
   const targetRef = useRef(null);
 
-  const formEasing = cubicBezier(0.44, 0, 0.22, 0.99);
-
-  const formVariants = {
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.5, delay: 0.3, ease: formEasing },
-    },
-    hidden: { opacity: 0 },
-  };
-
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  console.log(inView);
-
-  useEffect(() => {
-    if (inView) {
-      console.log("in view");
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   return (
     <div
       id="hero"
@@ -58,22 +34,21 @@ const Homepage = () => {
         <div className="flex items-center flex-col md:flex-row justify-center gap-10 w-full relative">
           <div className="w-full flex flex-col items-center justify-center gap-6 md:items-start relative">
             <motion.div
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    damping: 30,
-                    stiffness: 180,
-                    mass: 1,
-                    delay: 0.2,
-                  },
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 30,
+                  stiffness: 180,
+                  mass: 1,
+                  delay: 0.2,
                 },
-                hidden: { opacity: 0, y: 10 },
+              }}
+              viewport={{
+                amount: "all",
+                once: true,
               }}
               className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50"
             >
@@ -99,19 +74,18 @@ const Homepage = () => {
             </motion.div>
 
             <motion.h1
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.8,
-                    ease: cubicBezier(0.44, 0, 0, 1),
-                  },
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.8,
+                  ease: [0.44, 0, 0, 1],
                 },
-                hidden: { opacity: 0, y: 50 },
+              }}
+              viewport={{
+                amount: "all",
+                once: true,
               }}
               className="text-[45px] leading-[47.25px] md:text-[72px] md:leading-[75.6px] tracking-[-2px] md:tracking-[-3px] poppins-medium text-center md:text-left md:w-[610px] z-20"
             >
@@ -119,22 +93,21 @@ const Homepage = () => {
             </motion.h1>
 
             <motion.img
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    type: "spring",
-                    damping: 100,
-                    stiffness: 300,
-                    mass: 1,
-                    delay: 0.3,
-                  },
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 100,
+                  stiffness: 300,
+                  mass: 1,
+                  delay: 0.3,
                 },
-                hidden: { opacity: 0, y: 20 },
+              }}
+              viewport={{
+                amount: "all",
+                once: true,
               }}
               src="https://framerusercontent.com/images/aTjtJJGxuy3avHrtmudaw8F06g.png?scale-down-to=512"
               alt=""
@@ -142,20 +115,19 @@ const Homepage = () => {
             />
 
             <motion.p
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.8,
-                    delay: 0.2,
-                    ease: cubicBezier(0.44, 0, 0, 1),
-                  },
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.8,
+                  delay: 0.2,
+                  ease: [0.44, 0, 0, 1],
                 },
-                hidden: { opacity: 0, y: 50 },
+              }}
+              viewport={{
+                amount: "all",
+                once: true,
               }}
               className="be-vietnam-pro-medium text-[#475466] text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]"
             >
@@ -165,20 +137,19 @@ const Homepage = () => {
             </motion.p>
 
             <motion.div
-              ref={ref}
-              animate={controls}
-              initial="hidden"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.8,
-                    delay: 0.3,
-                    ease: cubicBezier(0.44, 0, 0, 1),
-                  },
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.8,
+                  delay: 0.4,
+                  ease: [0.44, 0, 0, 1],
                 },
-                hidden: { opacity: 0, y: 50 },
+              }}
+              viewport={{
+                amount: "all",
+                once: true,
               }}
               className="flex flex-col md:flex-row gap-4 md:gap-1.5 items-center"
             >
@@ -210,10 +181,19 @@ const Homepage = () => {
           </div>
 
           <motion.div
-            ref={ref}
-            animate={controls}
-            initial="hidden"
-            variants={formVariants}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay: 0.3,
+                ease: [0.44, 0, 0.22, 0.99],
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
             className="bg-[#fdffff] w-full px-[32px] py-[40px] flex flex-col gap-6 shadow-[5px_25px_25px_0px_rgba(0,0,0,0.1)] rounded-[24px] items-center md:max-w-min z-10"
           >
             <div className="flex flex-col gap-3 w-full items-center justify-center md:w-[392px]">
@@ -265,48 +245,46 @@ const Homepage = () => {
         <StartupCarousel />
 
         <motion.img
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                type: "spring",
-                damping: 100,
-                stiffness: 300,
-                mass: 1,
-                delay: 0.5,
-              },
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 100,
+              stiffness: 300,
+              mass: 1,
+              delay: 0.5,
             },
-            hidden: { opacity: 0, y: 20 },
+          }}
+          viewport={{
+            amount: "all",
+            once: true,
           }}
           src="https://framerusercontent.com/images/uTKvR6qfTzsBtXOvlLGL21I53YY.png?scale-down-to=512"
           alt=""
           className="absolute hidden md:block w-[271px] top-[106px] right-[455px]"
         />
         <motion.img
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                type: "spring",
-                damping: 100,
-                stiffness: 300,
-                mass: 1,
-                delay: 0.7,
-              },
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 100,
+              stiffness: 320,
+              mass: 1,
+              delay: 0.7,
             },
-            hidden: { opacity: 0, y: 30 },
+          }}
+          viewport={{
+            amount: "some",
+            once: true,
           }}
           src="https://framerusercontent.com/images/AM9PX8l3tcHV41oVhZ9gWUkBSE.png?scale-down-to=512"
           alt=""
-          className="absolute w-[301px] top-[776px] right-[-35px] md:top-[446px] md:left-[1175px] rotate-[-30deg]"
+          className="absolute w-[301px] top-[776px] right-[-35px] md:top-[446px] md:left-[1175px] !rotate-[-30deg]"
         />
       </section>
 
