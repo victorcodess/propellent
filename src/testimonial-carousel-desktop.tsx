@@ -1,25 +1,22 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { RefObject } from "react";
-// import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
-interface TestimonialCarouselDesktopProps {
-  targetRef: RefObject<HTMLElement>;
-}
+const TestimonialCarouselDesktop = () => {
+  const cardRef = useRef<HTMLDivElement | null>(null);
 
-const TestimonialCarouselDesktop = (
-  targetRef: TestimonialCarouselDesktopProps
-) => {
   const { scrollYProgress } = useScroll({
-    target: targetRef.targetRef,
+    target: cardRef,
+    offset: ["start end", "30% start"],
   });
 
- // ["-40%", "1%"]
-
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-35%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0px", "-997px"]);
 
   return (
-    <div className="flex flex-col items-start pl-[68px] w-full overflow-hidden">
-      <motion.div style={{ x }} className="flex gap-10">
+    <div
+      ref={cardRef}
+      className="flex flex-col items-start pl -[68px] w-full overflow-hidden relative h-[467px]"
+    >
+      <motion.div style={{ x }} className="flex gap-10 absolute left-[68px]">
         <div className="flex flex-row gap-[40px] items-center  justify-center bg-white p-[40px] rounded-[16px] w-[1000px] relative ">
           <img
             src="https://framerusercontent.com/images/jCl7IxnOEN5iV2G3osyfKLdVdoU.jpg?scale-down-to=512"

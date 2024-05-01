@@ -1100,12 +1100,41 @@ const Homepage = () => {
             </h3>
 
             <motion.img
-            initial={{ opacity: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                  delay: 0.8,
+                  ease: [0.44, 0, 0, 1],
+                },
+              }}
+              viewport={{
+                amount: "some",
+                once: true,
+              }}
+              src="https://framerusercontent.com/images/VL43VhHmWPuTeXXKbTYxdaAoyU.png?scale-down-to=512"
+              alt=""
+              className="absolute w-[152px] hidden md:block top-[-30.5px] right-[223px] rotate-[-43deg]"
+            />
+          </motion.div>
+          <div className="fl ex hidden w-full md:hidden items-center">
+            <TestimonialCarouselMobile />
+          </div>
+          <div className="hid den md: flex w-full items-center">
+            <TestimonialCarouselDesktop />
+          </div>
+        </div>
+
+        <Link to="/" className="">
+          <motion.button
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{
               opacity: 1,
+              y: 0,
               transition: {
                 duration: 0.8,
-                delay: 0.8,
+                delay: 0.5,
                 ease: [0.44, 0, 0, 1],
               },
             }}
@@ -1113,24 +1142,10 @@ const Homepage = () => {
               amount: "some",
               once: true,
             }}
-              src="https://framerusercontent.com/images/VL43VhHmWPuTeXXKbTYxdaAoyU.png?scale-down-to=512"
-              alt=""
-              className="absolute w-[152px] hidden md:block top-[-30.5px] right-[223px] rotate-[-43deg]"
-            />
-          </motion.div>
-          <div className="flex w-full md:hidden items-center">
-            <TestimonialCarouselMobile />
-          </div>
-          <div className="hidden md:flex w-full items-center">
-            <TestimonialCarouselDesktop targetRef={targetRef} />
-          </div>
-        </div>
-
-        <Link
-          to="/"
-          className="text-base mt-[-20px] leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-full px-[18px] py-[14px] md:px-5 flex items-center justify-center w-full md:max-w-max"
-        >
-          Read all stories
+            className="text-base mt-[-20px] leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-full px-[18px] py-[14px] md:px-5 flex items-center justify-center w-full md:max-w-max"
+          >
+            Read all stories
+          </motion.button>
         </Link>
 
         <div
@@ -1141,48 +1156,148 @@ const Homepage = () => {
 
       <section className="bg-white flex flex-col items-center w-full pt-[60px] pb-[92px] md:pb-[80px] px-[24px] md:px-[64px] gap-[60px] md:gap-[80px] relative">
         <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px]">
-          <div className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 40,
+                stiffness: 150,
+                mass: 1,
+                delay: 0.2,
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
+            className="flex items-center py-2 px-3 bg-[#bdff1c] rounded-[11px]"
+          >
             <h4 className="ibm-plex-mono-semibold text-black text-[12px] leading-[13.2px] text-center tracking-[1.2px]">
               FAQs
             </h4>
-          </div>
-          <div className="text-[40px] leading-[44px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 40,
+                stiffness: 150,
+                mass: 1,
+                delay: 0.3,
+              },
+            }}
+            viewport={{
+              amount: "some",
+              once: true,
+            }}
+            className="text-[40px] leading-[44px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative"
+          >
             <h3 className="text-[#a3a6ae]">Still not convinced?</h3>
             <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
               We've got the answers
             </h3>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="bg-[#f5f5f5] pl-[20px] pr-[24px] rounded-[20px]">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 0.8,
+              delay: 0.3,
+              ease: [0.44, 0, 0, 1],
+            },
+          }}
+          viewport={{
+            amount: "some",
+            once: true,
+          }}
+          className="bg-[#f5f5f5] pl-[20px] pr-[24px] rounded-[20px]"
+        >
           <Accordion />
-        </div>
+        </motion.div>
 
-        <h4 className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#0f1728] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 flex items-center justify-center w-full bor der">
+        <motion.h4
+          initial={{ opacity: 0, y: 5 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 40,
+              stiffness: 150,
+              mass: 1,
+              delay: 0.2,
+            },
+          }}
+          viewport={{
+            amount: "some",
+            once: true,
+          }}
+          className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#0f1728] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 flex items-center justify-center w-full bor der"
+        >
           Still have more questions? Contact our{" "}
           <span className="underline ml-1 cursor-pointer">help center</span>.
-        </h4>
+        </motion.h4>
 
-        <div className="flex flex-col md:flex-row items-center bg-[#bdff1c] w-[622px] h-[749px] rounded-[24px] overflow-hidden md:w-full md:h-[480px]">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 40,
+              stiffness: 160,
+              mass: 1,
+              delay: 0.1,
+            },
+          }}
+          viewport={{
+            amount: "some",
+            once: true,
+          }}
+          className="flex flex-col md:flex-row items-center bg-[#bdff1c] w-full sm:w-[622px] h-[749px] rounded-[24px] overflow-hidden md:w-full md:h-[480px]"
+        >
           <div className="flex flex-col gap-12 items-start w-full px-10 md:pl-16 pt-[60px] pb-[60px] bor der w- [285px]">
             <h1 className="poppins-medium text-[40px] leading-[44px] tracking-[-1px] text-[#0f1728] w-[80%] md:text-[52px] md:leading-[57.2px] md:w-[505px]">
               Shoot your startup into a new era, start now.
             </h1>
-            <Link
-              to="/"
-              className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#854dff] bg-transparent rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center w-full max-w-max"
-            >
-              Get Template
+            <Link to="/">
+              <motion.button
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.8,
+                    delay: 0.5,
+                    ease: [0.44, 0, 0, 1],
+                  },
+                }}
+                viewport={{
+                  amount: "some",
+                  once: true,
+                }}
+                className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#854dff] rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center w-full max-w-max"
+              >
+                Get Template
+              </motion.button>
             </Link>
           </div>
-          {/* <div className=""> */}
           <img
             src="https://framerusercontent.com/images/xbGd7KjeOkQuVXYhzidyCZ0EUM.jpg?scale-down-to=2048"
             alt=""
             className="rounded-b-[24px] hi dden h-[400px] object-cover w-full md:h-full md:w-[631px] md:rounded-b-[0px]"
           />
-          {/* </div> */}
-        </div>
+        </motion.div>
       </section>
     </div>
   );
