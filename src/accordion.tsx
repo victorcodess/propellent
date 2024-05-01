@@ -21,10 +21,8 @@ const Accordion: React.FC = () => {
         className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-[#0f1728]  border-gray-200 gap-3 z-40"
         id="accordion-flush-heading-1"
         onClick={() => toggleAccordion("accordion-flush-body-1")}
-        // className="bg-black/20 cursor-pointer z-20"
-        //   onClick={() => toggleAccordion("accordion-flush-body-1")}
       >
-        <span className="text-[18px] leading-[24.3px] tracking-[-0.36px]">
+        <span className="text-[18px] text-left leading-[24.3px] tracking-[-0.36px]">
           Is there a free trial available?
         </span>
         <img
@@ -38,7 +36,7 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-1"
         className={`transition-all  durati on-500 ${
-          isOpen["accordion-flush-body-1"] ? "h-[68px]" : "h-0"
+          isOpen["accordion-flush-body-1"] ? "h-[68px] md:h-[40px]" : "h-0"
         }`}
       >
         <div className="pb-5">
@@ -57,9 +55,8 @@ const Accordion: React.FC = () => {
         className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-[#0f1728] gap-3 z-40 border-t-2 border-gray-200"
         id="accordion-flush-heading-2"
         onClick={() => toggleAccordion("accordion-flush-body-2")}
-        // className="bg-black/20 cursor-pointer z-20"
       >
-        <span className="text-[18px] leading-[24.3px] tracking-[-0.36px]">
+        <span className="text-[18px] text-left leading-[24.3px] tracking-[-0.36px]">
           Can I change my plan later?
         </span>
         <img
@@ -73,7 +70,7 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-2"
         className={`transition-all ${
-          isOpen["accordion-flush-body-2"] ? "h-[68px]" : "h-0"
+          isOpen["accordion-flush-body-2"] ? "h-[120px] md:h-[68px]" : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">
@@ -95,7 +92,7 @@ const Accordion: React.FC = () => {
         id="accordion-flush-heading-3"
         onClick={() => toggleAccordion("accordion-flush-body-3")}
       >
-        <span className="text-[18px] leading-[24.3px] tracking-[-0.36px]">
+        <span className="text-[18px] text-left leading-[24.3px] tracking-[-0.36px]">
           What is your cancellation policy?
         </span>
         <img
@@ -109,7 +106,7 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-3"
         className={`hidde n bg- black transition-all hidde durati on-500  h- [ 0px] ${
-          isOpen["accordion-flush-body-3"] ? "h-[68px] " : "h-0"
+          isOpen["accordion-flush-body-3"] ? "h-[120px] md:h-[68px] " : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">
@@ -129,7 +126,7 @@ const Accordion: React.FC = () => {
         className="flex items-center justify-between w-full py-5 font-medium rtl:text-right select-none text-[#0f1728]  border-t-2 border-gray-200 gap-3 z-40 bg-b lack/20 mt-"
         onClick={() => toggleAccordion("accordion-flush-body-4")}
       >
-        <span className="text-[18px] leading-[24.3px] tracking-[-0.36px] cursor-pointer bg-bl ack/20">
+        <span className="text-[18px] text-left leading-[24.3px] tracking-[-0.36px] cursor-pointer bg-bl ack/20">
           Can other info be added to an invoice?
         </span>
         <img
@@ -143,7 +140,7 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-4"
         className={`hid den transition-all durati on-500 ${
-          isOpen["accordion-flush-body-4"] ? "h-[68px]" : "h-0"
+          isOpen["accordion-flush-body-4"] ? "h-[120px] md:h-[68px]" : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">

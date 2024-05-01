@@ -48,8 +48,8 @@ const Faqs = () => {
             }}
             className="text-[40px] leading-[44px] tracking-[-1.6px] md:text-[56px] md:leading-[56px] md:tracking-[-2px] flex flex-col items-center w-full poppins-medium relative"
           >
-            <h3 className="text-[#a3a6ae]">Still not convinced?</h3>
-            <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px]">
+            <h3 className="text-[#a3a6ae] text-center md:text-left">Still not convinced?</h3>
+            <h3 className="text-[#0f1728] mt- [-8px] md:mt-[-0px] text-center md:text-left">
               We've got the answers
             </h3>
           </motion.div>
@@ -69,7 +69,7 @@ const Faqs = () => {
             amount: "some",
             once: true,
           }}
-          className="bg-[#f5f5f5] pl-[20px] pr-[24px] rounded-[20px]"
+          className="bg-[#f5f5f5] pl-[20px] pr-[24px] rounded-[20px] w-ful l h-full"
         >
           <Accordion />
         </motion.div>

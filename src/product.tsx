@@ -169,7 +169,7 @@ const Product = () => {
             <img
               src={sell}
               alt=""
-              className="w-[347px] sm:w-[473px] absolute top-[40px] sm:top-[21px] left-0 right-0 mx-auto md:w-[347px] md:top-[60px]"
+              className="w-[347px] sm:w-[473px] absolute top-[40px] sm:top-[21px] left-8 sm:left-0 right-0 mx-auto md:w-[347px] md:top-[60px]"
             />
             <div className="w-full flex flex-col items-start gap-3">
               <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
