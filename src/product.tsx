@@ -164,12 +164,12 @@ const Product = () => {
               amount: "some",
               once: true,
             }}
-            className="flex flex-col p-[32px]  bg-[#bdff1c] rounded-[24px] items-start gap-[40px] justify-end  relative w-full h-[450px] md:min-w-[421px]"
+            className="flex flex-col p-[32px]  bg-[#bdff1c] rounded-[24px] items-start gap-[40px] justify-end overflow-hidden relative w-full h-[450px] md:min-w-[421px]"
           >
             <img
               src={sell}
               alt=""
-              className="w-[390px] sm:w-[473px] absolute top-[40px] sm:top-[21px] left-0 right-0 mx-auto md:w-[347px] md:top-[60px]"
+              className="w-[347px] sm:w-[473px] absolute top-[40px] sm:top-[21px] left-0 right-0 mx-auto md:w-[347px] md:top-[60px]"
             />
             <div className="w-full flex flex-col items-start gap-3">
               <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
@@ -303,7 +303,7 @@ const Product = () => {
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                   AI-powered editor
                 </h3>
-                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50">
+                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50 text-center md:text-left">
                   Assign tasks, set priorities, and track progress effortlessly
                 </p>
               </div>
@@ -332,7 +332,7 @@ const Product = () => {
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                   Tools integrations
                 </h3>
-                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50">
+                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50 text-center md:text-left">
                   Visualize trends and monitor key performances
                 </p>
               </div>
@@ -361,7 +361,7 @@ const Product = () => {
                 <h3 className="font-medium text-[24px] leading-[28.8px] tracking-[-1px] text-[#0f1728]">
                   Data analytics
                 </h3>
-                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50">
+                <p className="font-normal leading-[24.3px] text-[18px] tracking-[-0.36px] text-black/50 text-center md:text-left">
                   Customize workflows, add integrations, and adapt features
                 </p>
               </div>
