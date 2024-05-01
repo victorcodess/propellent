@@ -20,7 +20,7 @@ const StartupCarousel = () => {
         },
       }}
       viewport={{
-        amount: "all",
+        amount: "some",
         once: true,
       }}
       className="w-full flex flex-col items-center justify-center gap-4 absolute bottom-[10px] md:bottom-[50px] px-[60px] hid den"

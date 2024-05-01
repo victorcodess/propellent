@@ -1,7 +1,26 @@
+import { motion } from "framer-motion";
+
 const TestimonialCarouselMobile = () => {
   return (
     <div className="flex flex-col gap-10 items-center">
-      <div className="flex flex-col gap-[30px] items-center justify-center bg-white p-[25px] rounded-[16px] w-full ">
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            type: "spring",
+            damping: 30,
+            stiffness: 400,
+            mass: 1,
+          },
+        }}
+        viewport={{
+          amount: "some",
+          once: true,
+        }}
+        className="flex flex-col gap-[30px] items-center justify-center bg-white p-[25px] rounded-[16px] w-full "
+      >
         <img
           src="https://framerusercontent.com/images/jCl7IxnOEN5iV2G3osyfKLdVdoU.jpg?scale-down-to=512"
           alt=""
@@ -24,8 +43,25 @@ const TestimonialCarouselMobile = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-[30px] items-center justify-center bg-[#dffab7] p-[25px] rounded-[16px] w-full ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            type: "spring",
+            damping: 30,
+            stiffness: 400,
+            mass: 1,
+          },
+        }}
+        viewport={{
+          amount: "some",
+          once: true,
+        }}
+        className="flex flex-col gap-[30px] items-center justify-center bg-[#dffab7] p-[25px] rounded-[16px] w-full "
+      >
         <img
           src="https://framerusercontent.com/images/GE1vHAv9NlgFtmyw1WPO1Fsrw28.jpg?scale-down-to=512"
           alt=""
@@ -48,8 +84,25 @@ const TestimonialCarouselMobile = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-[30px] items-center justify-center bg-[#f5f5f5] p-[25px] rounded-[16px] w-full ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            type: "spring",
+            damping: 30,
+            stiffness: 400,
+            mass: 1,
+          },
+        }}
+        viewport={{
+          amount: "some",
+          once: true,
+        }}
+        className="flex flex-col gap-[30px] items-center justify-center bg-[#f5f5f5] p-[25px] rounded-[16px] w-full "
+      >
         <img
           src="https://framerusercontent.com/images/H14E8S7hJnIxSEJdJ1uxSIdkr8E.jpg?scale-down-to=512"
           alt=""
@@ -71,7 +124,7 @@ const TestimonialCarouselMobile = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
