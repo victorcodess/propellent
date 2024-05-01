@@ -67,7 +67,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -97,7 +97,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -128,7 +128,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
