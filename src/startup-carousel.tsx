@@ -23,15 +23,15 @@ const StartupCarousel = () => {
         amount: "some",
         once: true,
       }}
-      className="w-full flex flex-col items-center justify-center gap-4 absolute bottom-[10px] md:bottom-[50px] px-[60px] hid den"
+      className="w-full flex flex-col items-center justify-center gap-4 absolute bottom-[10px] md:bottom-[50px] px-[20px] sm:px-[60px] hid den"
     >
       <h4 className="text-[20px] text-[#68708c] leading-[27px] tracking-[-0.5px]">
         Join other tech leaders:
       </h4>
 
-      <div className="relative w-full h-[100px] bor der">
+      <div className="relative w-full h-[100px]">
         <div
-          className="flex w-full h-full place-items-center m-0 p-[10px] list-none opacity-100 bo rder rela tive relative "
+          className="flex w-full h-full place-items-center m-0 p-[10px] list-none opacity-100 relative "
           style={{
             maskImage:
               "linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 95%)",
