@@ -505,6 +505,7 @@ const Homepage = () => {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{
+
                 opacity: 1,
                 y: 0,
                 transition: {
@@ -516,7 +517,7 @@ const Homepage = () => {
                 },
               }}
               viewport={{
-                amount: "some",
+                amount: 0.5,
                 once: true,
               }}
               className="flex flex-col p-10 md:p -16  bg-[#f5f5f5] rounded-[24px] items-center gap-[40px] justify-between h-full md:w-[588px] md:h-[588px]"
@@ -546,7 +547,7 @@ const Homepage = () => {
                 },
               }}
               viewport={{
-                amount: "some",
+                amount: 0.5,
                 once: true,
               }}
               className="flex flex-col p-10 md:px -16 bg-[#f5f5f5] rounded-[24px] items-center gap-[22px] justify-between h-full w-full md:w-[588px] md:h-[588px]"

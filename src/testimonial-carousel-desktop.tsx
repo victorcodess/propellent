@@ -9,7 +9,7 @@ const TestimonialCarouselDesktop = () => {
     offset: ["start end", "30% start"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0px", "-997px"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["68px", "-997px"]);
 
   return (
     <div
