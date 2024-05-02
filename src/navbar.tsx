@@ -127,11 +127,21 @@ const Navbar = () => {
       )}
 
       <div
-        className={`pb-[5px] transition-all ${
-          navbarVisible ? "top-[99px]" : "-top-[400px] "
-        } shadow-[0px_23px_30px_0px_rgba(0,0,0,0.1)] flex flex-col items-center justify-between w-full gap-10 left-0 absolute  bg-white px-6 md:hidden pt-4 pb-10`}
+        className={`pb-[40px] ${
+          navbarVisible ? "open-nav" : "close-nav"
+        } transition-all top-[99px]  flex flex-col items-center justify-between w-full gap-10 left-0 absolute bg-whi te px-6 md:hidden pt-4`}
       >
-        <div className="max-w-max flex flex-col items-center justify-center gap-[33px] be-vietnam-pro-medium">
+        <div
+          className={`absolute w-full delay-600 shadow-[0px_23px_30px_0px_rgba(0,0,0,0.1)] transition-all duration-500 ${
+            navbarVisible ? "h-full" : "h-0"
+          } bg-white top-0  -z-10`}
+        />
+
+        <div
+          className={`max-w-max transition delay-[900ms] ${
+            navbarVisible ? "open-nav-items" : "close-nav-items"
+          } flex flex-col items-center justify-center gap-[33px] be-vietnam-pro-medium`}
+        >
           <Link
             to="#benefits"
             onClick={handleScroll}
@@ -164,7 +174,9 @@ const Navbar = () => {
 
         <Link
           to="/"
-          className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] border border-[#854dff] bg-transparent rounded-lg px-[18px] py-[14px] flex items-center justify-center w-full"
+          className={`text-base transition leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#854dff] ${
+            navbarVisible ? "open-nav-items" : "close-nav-items"
+          } border border-[#854dff] bg-transparent rounded-lg px-[18px] py-[14px] flex items-center justify-center w-full`}
         >
           Get Template
         </Link>

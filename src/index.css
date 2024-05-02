@@ -8,6 +8,25 @@
   scroll-behavior: smooth;
 }
 
+.open-nav {
+  top: 99px;
+}
+
+.close-nav {
+  top: -400px;
+  transition-delay: 1200ms;
+}
+
+.open-nav-items {
+  opacity: 1;
+  transition-delay: 300ms;
+}
+
+.close-nav-items {
+  opacity: 0;
+  transition-delay: 100ms;
+}
+
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 400;
@@ -121,4 +140,3 @@ body {
   animation: marquee 20s linear infinite;
   /* transform: translate(0, -50%); */
 }
-
