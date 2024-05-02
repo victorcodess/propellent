@@ -91,10 +91,12 @@ const Faqs = () => {
             amount: "some",
             once: true,
           }}
-          className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#0f1728] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 flex items-center justify-center w-full bor der"
+          className="text-[18px] mt-5 md:mt-0 leading-[24.3px] tracking-[-0.54px] be-vietnam-pro-medium text-[#0f1728] bg-transparent rounded-full px-[24px] py-[24px] md:px-5 w-full text-center"
         >
-          Still have more questions? Contact our{" "}
-          <span className="underline ml-1 cursor-pointer">help center</span>.
+          Still have more questions? Contact our
+          <span className="underline ml-1 cursor-pointer hover:text-[#475466]">
+            help center
+            </span>.
         </motion.h4>
 
         <motion.div
@@ -120,7 +122,7 @@ const Faqs = () => {
             <h1 className="poppins-medium text-[40px] leading-[44px] tracking-[-1px] text-[#0f1728] w-[80%] md:text-[52px] md:leading-[57.2px] md:w-[505px]">
               Shoot your startup into a new era, start now.
             </h1>
-            <Link to="/">
+            <Link to="/" className="w-full flex items-center justify-center">
               <motion.button
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{
@@ -136,7 +138,7 @@ const Faqs = () => {
                   amount: "some",
                   once: true,
                 }}
-                className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#854dff] rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center w-full max-w-max"
+                className="text-base leading-[21.6px] tracking-[-0.48px] be-vietnam-pro-medium text-[#fff] bg-[#854dff] rounded-full px-[18px] md:px-[22px] py-[14px] flex items-center justify-center min-w-full md:max-w-max"
               >
                 Get Template
               </motion.button>

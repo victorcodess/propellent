@@ -18,7 +18,7 @@ const Accordion: React.FC = () => {
     >
       <button
         type="button"
-        className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-[#0f1728]  border-gray-200 gap-3 z-40"
+        className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-[#0f1728] border-gray-200 gap-3 z-40"
         id="accordion-flush-heading-1"
         onClick={() => toggleAccordion("accordion-flush-body-1")}
       >
@@ -27,7 +27,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-max transition-all duration-300 ease-in-out ${
+          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-1"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -36,7 +36,9 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-1"
         className={`transition-all  durati on-500 ${
-          isOpen["accordion-flush-body-1"] ? "h-[68px] md:h-[40px]" : "h-0"
+          isOpen["accordion-flush-body-1"]
+            ? "h-[95px] sm:h-[68px] md:h-[40px]"
+            : "h-0"
         }`}
       >
         <div className="pb-5">
@@ -61,7 +63,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-max transition-all duration-300 ease-in-out ${
+          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-2"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -70,7 +72,9 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-2"
         className={`transition-all ${
-          isOpen["accordion-flush-body-2"] ? "h-[120px] md:h-[68px]" : "h-0"
+          isOpen["accordion-flush-body-2"]
+            ? "h-[150px] sm:h-[120px] md:h-[68px]"
+            : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">
@@ -97,7 +101,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-max transition-all duration-300 ease-in-out ${
+          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-3"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -106,7 +110,9 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-3"
         className={`hidde n bg- black transition-all hidde durati on-500  h- [ 0px] ${
-          isOpen["accordion-flush-body-3"] ? "h-[120px] md:h-[68px] " : "h-0"
+          isOpen["accordion-flush-body-3"]
+            ? "h-[150px] sm:h-[120px] md:h-[68px] "
+            : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">
@@ -131,7 +137,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-max transition-all duration-300 ease-in-out ${
+          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-4"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -140,7 +146,9 @@ const Accordion: React.FC = () => {
       <div
         id="accordion-flush-body-4"
         className={`hid den transition-all durati on-500 ${
-          isOpen["accordion-flush-body-4"] ? "h-[120px] md:h-[68px]" : "h-0"
+          isOpen["accordion-flush-body-4"]
+            ? "h-[150px] sm:h-[120px] md:h-[68px]"
+            : "h-0"
         }`}
       >
         <div className="pb-5 bor der-b border-gray-200">
