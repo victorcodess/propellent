@@ -27,7 +27,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
+          className={`min-w-4 h-4 transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-1"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -63,7 +63,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
+          className={`min-w-4 h-4 transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-2"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -101,7 +101,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
+          className={`min-w-4 h-4 transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-3"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
@@ -137,7 +137,7 @@ const Accordion: React.FC = () => {
         </span>
         <img
           src={plus}
-          className={`w-4 h-4 min-w-min transition-all duration-300 ease-in-out ${
+          className={`min-w-4 h-4 transition-all duration-300 ease-in-out ${
             isOpen["accordion-flush-body-4"] ? "rotate-[45deg]" : "rotate-0"
           } shrink-0`}
           alt=""
