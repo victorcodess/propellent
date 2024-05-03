@@ -10,7 +10,7 @@ const Product = () => {
   return (
     <section
       id="product"
-      className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[152px] gap-[80px] relative"
+      className="flex flex-col items-center w-full pt-[120px] md:pt-[160px] pb-[190px] md:pb-[150px] px-[24px] md:px-[32px] xl:px-[152px] gap-[80px] relative"
     >
       <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
         <motion.div
@@ -79,7 +79,7 @@ const Product = () => {
       </div>
 
       <div className="flex-col flex w-full pb-2">
-        <div className="flex flex-col md:flex-row gap-[40px] items-center w-full">
+        <div className="flex flex-col xl:flex-row gap-[40px] items-center w-full">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{
@@ -97,7 +97,7 @@ const Product = () => {
               amount: 0.5,
               once: true,
             }}
-            className="flex flex-col p-10 md:p -16  bg-[#f5f5f5] rounded-[24px] items-center gap-[40px] justify-between h-full md:w-[588px] md:h-[588px]"
+            className="flex flex-col p-10 md:p -16  bg-[#f5f5f5] rounded-[24px] items-center gap-[40px] justify-between h-full w-full xl:w-[588px] xl:h-[588px]"
           >
             <img src={invest} alt="" className="w-[473px]" />
             <div className="w-full flex flex-col items-start gap-2">
@@ -127,7 +127,7 @@ const Product = () => {
               amount: 0.5,
               once: true,
             }}
-            className="flex flex-col p-10 md:px -16 bg-[#f5f5f5] rounded-[24px] items-center gap-[22px] justify-between h-full w-full md:w-[588px] md:h-[588px]"
+            className="flex flex-col p-10 md:px -16 bg-[#f5f5f5] rounded-[24px] items-center gap-[22px] justify-between h-full w-full xl:w-[588px] md:h-[588px]"
           >
             <img
               src={earn}
@@ -146,7 +146,7 @@ const Product = () => {
           </motion.div>
         </div>
 
-        <div className="mt-10 md:mt-[60px] flex flex-col md:flex-row gap-10 items-center justify-center">
+        <div className="mt-10 md:mt-[60px] flex flex-col xl:flex-row gap-10 items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{
@@ -175,7 +175,7 @@ const Product = () => {
               <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
                 Sell at your wish
               </h3>
-              <p className="font-normal leading-[21.6px] text-[18px] tracking-[-0.18px] text-black/50 md:w-[315px]">
+              <p className="font-normal leading-[21.6px] text-[18px] tracking-[-0.18px] text-black/50 xl:w-[315px]">
                 For anyone to start building their real estate portfolio, no
                 matter the size of your wallet.
               </p>
@@ -201,11 +201,11 @@ const Product = () => {
             }}
             className="flex w-full flex-col sm:flex-row gap-10"
           >
-            <div className="flex flex-col rounded-[24px] items-start gap-[40px] md:gap-0 justify-between w-full h-[450px] md:w-[357px]">
+            <div className="flex flex-col rounded-[24px] items-start gap-[40px] md:gap-0 justify-between w-full h-[450px] md:w-1/2 xl:w-[357px]">
               <img
                 src={secure}
                 alt=""
-                className="w-full sm:w-[357px] h-[311px] object-cover rounded-[24px]"
+                className="w-full sm:w-[357px] h-[311px] object-cover rounded-[24px] md:w-full"
               />
               <div className="w-full flex flex-col items-start gap-3">
                 <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
@@ -235,12 +235,12 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:gap-0 rounded-l-[24px] items-start gap-[40px] justify-between w-full h-[450px] md:w-[357px]"
+              className="flex flex-col md:gap-0 rounded-l-[24px] items-start gap-[40px] justify-between w-full h-[450px] md:w-1/2 xl:w-[357px]"
             >
               <img
                 src={integrated}
                 alt=""
-                className="w-full sm:w-[357px] h-[317px] object-cover rounded-l-[24px]"
+                className="w-full sm:w-[357px] h-[317px] object-cover rounded-l-[24px] md:w-full"
               />
               <div className="w-full flex flex-col items-start gap-3">
                 <h3 className="font-medium text-[25px] leading-[30px] tracking-[-0.5px] text-[#000] poppins-medium">
@@ -296,7 +296,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
@@ -325,7 +325,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
@@ -354,7 +354,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
@@ -386,7 +386,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
@@ -415,7 +415,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
@@ -444,7 +444,7 @@ const Product = () => {
                 amount: "some",
                 once: true,
               }}
-              className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
+              className="flex flex-col xl:flex-row gap-4 items-center md:items-start w-full md:w-[376px] md:py-6 md:pl-8 rounded-[24px]"
             >
               <img src={fingerprintTwo} alt="" className="w-[96px]" />
               <div className="w-full flex flex-col items-center md:items-start gap-1 md:gap-2">
