@@ -1,5 +1,5 @@
+import Benefits from "./benefits";
 import Hero from "./hero";
-
 
 const Homepage = () => {
   // useEffect(() => {
@@ -16,7 +16,7 @@ const Homepage = () => {
       className="w-full min-h-[85vh] bg-white flex flex-col pt-[66px] md:pt-[66px]"
     >
       <Hero />
-      {/*<Benefits />*/}
+      <Benefits />
       {/*<Product />*/}
       {/*<Testimonials />*/}
       {/*<Faqs />*/}

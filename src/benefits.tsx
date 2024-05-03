@@ -5,9 +5,9 @@ const Benefits = () => {
   return (
     <section
       id="benefits"
-      className="pt-[80px] md:pt-[120px]  bg-white w-full px-[24px] md:px-[178px] flex flex-col items-center gap-[60px]"
+      className="pt-[80px] lg:pt-[120px]  bg-white w-full px-[24px] md:px-[32px] xl:px-[178px] flex flex-col items-center gap-[60px]"
     >
-      <div className="flex flex-col items-center gap-5 w-full md:w-[800px]">
+      <div className="flex flex-col items-center gap-5 w-full xl:w-[800px]">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           whileInView={{
@@ -67,7 +67,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -97,7 +97,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
@@ -128,7 +128,7 @@ const Benefits = () => {
             amount: "some",
             once: true,
           }}
-          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-between h-full gap-16 sm:h-[274px] md:h-[348px]"
+          className="flex flex-col p-8 bg-[#bdff1c] rounded-[24px] items-start justify-start h-full gap-16 md:gap-10 sm:h-[274px] md:h-[435px] lg:h-[348px] md:w-1/3"
         >
           <img src={fingerprint} alt="" className="w-16 h-16" />
           <div className="w-full flex flex-col items-start gap-2">
