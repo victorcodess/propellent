@@ -35,7 +35,7 @@ const Navbar = () => {
         once: true,
       }}
       id="navbar"
-      className={`px-[24px] md:px-[80px] z-50 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
+      className={`px-[24px] lg:px-[80px] z-50 py-[25.5px] flex items-center justify-between w-full top-[0px] left-0 fixed bg-white`}
     >
       <Link
         to="#hero"
@@ -49,7 +49,7 @@ const Navbar = () => {
         </h2>
       </Link>
 
-      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px]">
+      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px] md:pr-0 md:pl-[100px] lg:pr-[28px] lg:pl-0">
         <Link
           to="#benefits"
           onClick={handleScroll}
