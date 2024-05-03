@@ -3,7 +3,7 @@ import logo from "./assets/logo.svg";
 
 const Footer = () => {
   return (
-    <footer className="px-[24px] md:px-[80px] z-40 py-[32px]  flex flex-col md:flex-row gap-[42px] items-center justify-between w-full bg-white">
+    <footer className="px-[24px] lg:px-[80px] z-40 py-[32px] flex flex-col lg:flex-row gap-[42px] items-center justify-between w-full bg-white">
       <Link to="/" className="flex items-center gap-2.5 cursor-pointer">
         <img src={logo} alt="Propellent Logo" className="w-[50px] h-[50px]" />
 
