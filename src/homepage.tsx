@@ -1,6 +1,7 @@
 import Benefits from "./benefits";
 import Hero from "./hero";
 import Product from "./product";
+import Testimonials from "./testimonials";
 
 const Homepage = () => {
   // useEffect(() => {
@@ -19,7 +20,7 @@ const Homepage = () => {
       <Hero />
       <Benefits />
       <Product />
-      {/*<Testimonials />*/}
+      <Testimonials />
       {/*<Faqs />*/}
     </div>
   );

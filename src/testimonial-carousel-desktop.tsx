@@ -79,9 +79,9 @@ const TestimonialCarouselDesktop = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-[40px] items-center  justify-center bg-white p-[40px] rounded-[16px] w-[1000px] relative ">
+        <div className="flex flex-row gap-[40px] items-center  justify-center bg-white p-[40px] rounded-[16px] w-[1000px] relative max-h-min">
           <img
-            src="https://framerusercontent.com/images/jCl7IxnOEN5iV2G3osyfKLdVdoU.jpg?scale-down-to=512"
+            src="https://framerusercontent.com/images/H14E8S7hJnIxSEJdJ1uxSIdkr8E.jpg?scale-down-to=512"
             alt=""
             className="rounded-[16px] w-[496px] h-[360px] object-cover"
           />
@@ -94,17 +94,16 @@ const TestimonialCarouselDesktop = () => {
 
           <div className="flex flex-col items-start justify-between w-full gap-6">
             <h4 className="text-[32px] leading-[38.4px] tracking-[-1px] text-[#050505] w-full poppins-medium">
-              "We struggled to find the right talent globally, but with their
-              automated candidate ranking, we quickly identified top-notch
-              candidates who perfectly fit our requirements."
+              "The platform's emphasis on diversity and inclusion impressed me,
+              helping us create a more inclusive workforce."
             </h4>
 
             <div className="flex flex-col gap-1">
               <h5 className="text-[18px] leading-[28px] text-[#0f1728] font-semibold">
-                Sarah Johnson
+                Majin Bu
               </h5>
               <p className="leading-[24px] text-[#475466]">
-                Small Business Owner, Sarah's Boutique
+                HR Manager @ Foster Partners
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ const Testimonials = () => {
   const targetRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[30px] md:px-[56px] gap-[60px] md:gap-[80px] relative">
+    <section className="bg-[#f5f5f5] flex flex-col items-center w-full py-[60px] md:pb-[80px] px-[30px] xl:px-[56px] gap-[60px] md:gap-[80px] relative">
       <div className="w-full flex flex-col gap-[45px] items-center pb-[60px] md:pb-[120px]">
         <div className="w-full flex flex-col items-center gap-[15px] md:w-[850px]">
           <motion.div
@@ -56,7 +56,7 @@ const Testimonials = () => {
         </div>
 
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8">
-          <div className="flex flex-col gap-3 items-center w-full md:w-[445px] md:border-r border-[#B9BED1]">
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/3 xl:w-[445px] md:border-r border-[#B9BED1] md:pr-2.5 xl:pr-0">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -74,7 +74,7 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
             >
               75%
             </motion.h2>
@@ -95,12 +95,12 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]"
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
             >
               Candidate match rate
             </motion.p>
           </div>
-          <div className="flex flex-col gap-3 items-center w-full md:w-[445px] md:border-r border-[#B9BED1]">
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/3 xl:w-[445px] md:border-r border-[#B9BED1] md:pr-2.5 xl:pr-0">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -118,7 +118,7 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
             >
               4,000+
             </motion.h2>
@@ -139,12 +139,12 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]"
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
             >
               Successful placement
             </motion.p>
           </div>
-          <div className="flex flex-col gap-3 items-center w-full md:w-[445px]">
+          <div className="flex flex-col gap-3 items-center w-full md:w-1/3 xl:w-[445px] md:pr-2.5 xl:pr-0">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -162,7 +162,7 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
+              className="text-[#854dff] font-medium text-[48px] leading-[48px] md:text-[62px] xl:text-[80px] md:font-semi bold md:leading-[80px] tracking-[-3px]"
             >
               50+
             </motion.h2>
@@ -183,7 +183,7 @@ const Testimonials = () => {
                 amount: "some",
                 once: true,
               }}
-              className="text-[18px] leading-[24.3px] md:text-[20px] md:leading-[27px] tracking-[-0.5px]"
+              className="text-[18px] leading-[24.3px] md:text-[20px] text-center md:leading-[27px] tracking-[-0.5px]"
             >
               Operating countries
             </motion.p>
@@ -233,7 +233,7 @@ const Testimonials = () => {
             }}
             src="https://framerusercontent.com/images/VL43VhHmWPuTeXXKbTYxdaAoyU.png?scale-down-to=512"
             alt=""
-            className="absolute w-[152px] hidden md:block top-[-30.5px] right-[223px] rotate-[-43deg]"
+            className="absolute w-[152px] hidden xl:block top-[-30.5px] right-[223px] rotate-[-43deg]"
           />
         </motion.div>
         <div className="flex md:hidden w-full items-center">
