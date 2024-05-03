@@ -1,4 +1,5 @@
 import Benefits from "./benefits";
+import Faqs from "./faqs";
 import Hero from "./hero";
 import Product from "./product";
 import Testimonials from "./testimonials";
@@ -21,7 +22,7 @@ const Homepage = () => {
       <Benefits />
       <Product />
       <Testimonials />
-      {/*<Faqs />*/}
+      <Faqs />
     </div>
   );
 };
