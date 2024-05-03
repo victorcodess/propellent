@@ -1,8 +1,5 @@
 import Hero from "./hero";
-import Benefits from "./benefits";
-import Product from "./product";
-import Testimonials from "./testimonials";
-import Faqs from "./faqs";
+
 
 const Homepage = () => {
   // useEffect(() => {
