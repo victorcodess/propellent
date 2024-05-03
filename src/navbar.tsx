@@ -44,12 +44,12 @@ const Navbar = () => {
       >
         <img src={logo} alt="Propellent Logo" className="w-[50px] h-[50px]" />
 
-        <h2 className="text-[22px] leading-[24.2px] tracking-[-0.6px] poppins-medium">
+        <h2 className="text-[22px] leading-[24.2px] tracking-[-0.6px] poppins-medium md:hidden lg:block" >
           Propellent
         </h2>
       </Link>
 
-      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px] md:pr-0 md:pl-[100px] lg:pr-[28px] lg:pl-0">
+      <div className="md:flex items-center justify-center gap-8 hidden be-vietnam-pro-medium pr-[28px] md:pr-0 md:pl-[50px] lg:pr-[28px] lg:pl-0">
         <Link
           to="#benefits"
           onClick={handleScroll}

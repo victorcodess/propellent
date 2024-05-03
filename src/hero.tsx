@@ -5,8 +5,8 @@ import StartupCarousel from "./startup-carousel";
 
 const Hero = () => {
   return (
-    <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col justify-center gap-40 w-full px-5 md:pl-[152px] md:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
-      <div className="flex items-center flex-col md:flex-row justify-center gap-10 w-full relative">
+    <section className="mt-[35px] pt-[99px] md:pt-[101px] flex items-center flex-col justify-center gap-40 w-full px-5 md:px-16 xl:pl-[152px] xl:pr-[120px] pb-[264px] bg-[#f8f8f8] relative overflow-hidden">
+      <div className="flex items-center flex-col xl:flex-row justify-center gap-10 md:gap-20 w-full relative">
         <div className="w-full flex flex-col items-center justify-center gap-6 md:items-start relative">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -22,7 +22,7 @@ const Hero = () => {
               },
             }}
             viewport={{
-              amount: "all",
+              amount: "some",
               once: true,
             }}
             className="pr-0 flex items-center justify-start gap-[7px] cursor-pointer pl-[104px] rounded-full py-[13px] relative group w-[352px] bg -[#eaffb9]/50"
@@ -59,7 +59,7 @@ const Hero = () => {
               },
             }}
             viewport={{
-              amount: "all",
+              amount: "some",
               once: true,
             }}
             className="text-[45px] leading-[47.25px] md:text-[72px] md:leading-[75.6px] tracking-[-2px] md:tracking-[-3px] poppins-medium text-center md:text-left md:w-[610px] z-20"
@@ -81,7 +81,7 @@ const Hero = () => {
               },
             }}
             viewport={{
-              amount: "all",
+              amount: "some",
               once: true,
             }}
             src="https://framerusercontent.com/images/aTjtJJGxuy3avHrtmudaw8F06g.png?scale-down-to=512"
@@ -101,7 +101,7 @@ const Hero = () => {
               },
             }}
             viewport={{
-              amount: "all",
+              amount: "some",
               once: true,
             }}
             className="be-vietnam-pro-medium text-[#475466] text-[18px] leading-[24.3px] tracking-[-0.54px] md:text-[20px] md:leading-[27px] md:tracking-[-0.6px] text-center md:text-left w-full md:w-[480px]"
@@ -123,7 +123,7 @@ const Hero = () => {
               },
             }}
             viewport={{
-              amount: "all",
+              amount: "some",
               once: true,
             }}
             className="flex flex-col md:flex-row gap-4 md:gap-1.5 items-center"
@@ -169,9 +169,9 @@ const Hero = () => {
             amount: "some",
             once: true,
           }}
-          className="bg-[#fdffff] w-full px-[32px] py-[40px] flex flex-col gap-6 shadow-[5px_25px_25px_0px_rgba(0,0,0,0.1)] rounded-[24px] items-center md:max-w-min z-10"
+          className="bg-[#fdffff] w-full px-[32px] py-[40px] flex flex-col gap-6 shadow-[5px_25px_25px_0px_rgba(0,0,0,0.1)] rounded-[24px] items-center xl:max-w-min z-10"
         >
-          <div className="flex flex-col gap-3 w-full items-center justify-center md:w-[392px]">
+          <div className="flex flex-col gap-3 w-full items-center justify-center xl:w-[392px]">
             <h3 className="be-vietnam-pro-medium text-[26px] leading-[31.2px] tracking-[-1px] text-center text-[#0f1728]">
               Secure your spot now
             </h3>
@@ -183,7 +183,7 @@ const Hero = () => {
 
           <form
             action=""
-            className="mx-auto w-full flex flex-col gap-[15px] md:w-[392px]"
+            className="mx-auto w-full flex flex-col gap-[15px] xl:w-[392px]"
           >
             <input
               type="text"
@@ -233,12 +233,12 @@ const Hero = () => {
           },
         }}
         viewport={{
-          amount: "all",
+          amount: "some",
           once: true,
         }}
         src="https://framerusercontent.com/images/uTKvR6qfTzsBtXOvlLGL21I53YY.png?scale-down-to=512"
         alt=""
-        className="absolute hidden md:block w-[271px] top-[106px] right-[455px]"
+        className="absolute hidden md:block w-[271px] top-[616px] right-[560px] xl:top-[106px] xl:right-[455px]"
       />
       <motion.img
         initial={{ opacity: 0, y: 30 }}
@@ -259,7 +259,7 @@ const Hero = () => {
         }}
         src="https://framerusercontent.com/images/AM9PX8l3tcHV41oVhZ9gWUkBSE.png?scale-down-to=512"
         alt=""
-        className="absolute w-[301px] top-[776px] right-[-35px] md:top-[446px] md:left-[1175px] !rotate-[-30deg]"
+        className="absolute w-[301px] top-[776px] right-[-35px] md:top-[940px] md:right-[-20px] xl:top-[446px] xl:left-[1175px] !rotate-[-30deg]"
       />
     </section>
   );

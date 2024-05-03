@@ -19,10 +19,10 @@ const Homepage = () => {
       className="w-full min-h-[85vh] bg-white flex flex-col pt-[66px] md:pt-[66px]"
     >
       <Hero />
-      <Benefits />
-      <Product />
-      <Testimonials />
-      <Faqs />
+      {/*<Benefits />*/}
+      {/*<Product />*/}
+      {/*<Testimonials />*/}
+      {/*<Faqs />*/}
     </div>
   );
 };
