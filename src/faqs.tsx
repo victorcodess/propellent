@@ -7,7 +7,7 @@ import ogImg from "./assets/propellent-og.png";
 const Faqs = () => {
   return (
     <section className="bg-white flex flex-col items-center w-full pt-[60px] pb-[92px] md:pb-[80px] px-[24px] md:px-[32px] xl:px-[64px] gap-[60px] md:gap-[80px] relative">
-      <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px] border">
+      <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px]">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{
