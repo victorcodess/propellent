@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Accordion from "./accordion";
+import ogImg from "./assets/propellent-og.png";
+
 
 const Faqs = () => {
   return (
     <section className="bg-white flex flex-col items-center w-full pt-[60px] pb-[92px] md:pb-[80px] px-[24px] md:px-[32px] xl:px-[64px] gap-[60px] md:gap-[80px] relative">
-      <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px]">
+      <div className="w-full flex flex-col items-center gap-[10px] md:w-[850px] border">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{
@@ -157,7 +159,8 @@ const Faqs = () => {
           className="rounded-b-[24px] h-[400px] object-cover w-full xl:h-full xl:w-[631px] md:rounded-b-[0px]"
         />
       </motion.div>
-    </section>
+
+      <img src={ogImg} alt="" className="w-full opacity- 5 0 absolute bottom-0 z-10" />    </section>
   );
 };
 
