@@ -130,7 +130,7 @@ const Faqs = () => {
           <Link
             to="https://andrea-montini.lemonsqueezy.com"
             target="_blank"
-            className="w-full flex justify-start"
+            className="w-full md:w-max flex justify-start"
           >
             <motion.button
               initial={{ opacity: 0, y: 30 }}
@@ -160,7 +160,7 @@ const Faqs = () => {
         />
       </motion.div>
 
-      <img src={ogImg} alt="" className="w-full opacity- 5 0 absolute bottom-0 z-10" />    </section>
+      <img src={ogImg} alt="" className="w-full opacity-0 absolute bottom-0 -z-10" />    </section>
   );
 };
 
