@@ -15,13 +15,21 @@ const Footer = () => {
       <div className="w-full text-center sm:flex items-center justify-center gap-[5px] be-vietnam-pro-regular md:text-[14px] md:leading-[18.9px] md:tracking-[-0.28px] text-[16px] leading-[23.2px] tracking-[-0.32px]">
         <p>
           Design by
-          <a href="https://twitter.com/AndreaMontini" target="_blank" className="underline text-[#878787] hover:text-black hover:no-underline transition-all cursor-pointer duration-300 ml-[5px]">
+          <a
+            href="https://twitter.com/AndreaMontini"
+            target="_blank"
+            className="underline text-[#878787] hover:text-black hover:no-underline transition-all cursor-pointer duration-300 ml-[5px]"
+          >
             Adrea Montinni
           </a>
         </p>
         <p>
           | Development by
-          <a href="https://www.victorwilliams.me" target="_blank" className="underline text-[#878787] hover:text-black hover:no-underline transition-all cursor-pointer duration-300 mx-[5px]">
+          <a
+            href="https://www.victorwilliams.me"
+            target="_blank"
+            className="underline text-[#878787] hover:text-black hover:no-underline transition-all cursor-pointer duration-300 mx-[5px]"
+          >
             Victor Williams
           </a>
           - Copyright 2024

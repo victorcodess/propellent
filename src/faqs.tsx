@@ -125,7 +125,11 @@ const Faqs = () => {
           <h1 className="poppins-medium text-[40px] leading-[44px] tracking-[-1px] text-[#0f1728] w-[80%] md:text-[52px] md:leading-[57.2px] md:w-[505px]">
             Shoot your startup into a new era, start now.
           </h1>
-          <Link to="https://andrea-montini.lemonsqueezy.com" target="_blank" className="w-full flex justify-start">
+          <Link
+            to="https://andrea-montini.lemonsqueezy.com"
+            target="_blank"
+            className="w-full flex justify-start"
+          >
             <motion.button
               initial={{ opacity: 0, y: 30 }}
               whileInView={{

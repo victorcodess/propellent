@@ -244,7 +244,10 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <Link to="/" className="w-full flex items-center justify-center">
+      <Link
+        to="https://www.victorwilliams.me/"
+        className="w-full flex items-center justify-center"
+      >
         <motion.button
           initial={{ opacity: 0, y: 30 }}
           whileInView={{
