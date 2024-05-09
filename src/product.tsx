@@ -97,7 +97,7 @@ const Product = () => {
               amount: 0.5,
               once: true,
             }}
-            className="flex flex-col p-10 md:p -16  bg-[#f5f5f5] rounded-[24px] items-center gap-[40px] justify-between h-full w-full xl:w-[588px] xl:h-[588px]"
+            className="flex flex-col p-10 md:p -16  bg-[#f5f5f5] rounded-[24px] items-center gap-[40px] justify-between h-full w-full xl:w-[588px] xl:h-[588px] 2xl:w-1/2"
           >
             <img src={invest} alt="" className="w-[473px]" />
             <div className="w-full flex flex-col items-start gap-2">
@@ -127,7 +127,7 @@ const Product = () => {
               amount: 0.5,
               once: true,
             }}
-            className="flex flex-col p-10 md:px -16 bg-[#f5f5f5] rounded-[24px] items-center gap-[22px] justify-between h-full w-full xl:w-[588px] md:h-[588px]"
+            className="flex flex-col p-10 md:px -16 bg-[#f5f5f5] rounded-[24px] items-center gap-[22px] justify-between h-full w-full xl:w-[588px] md:h-[588px] 2xl:w-1/2"
           >
             <img
               src={earn}
@@ -278,7 +278,7 @@ const Product = () => {
         </motion.h2>
 
         <div className="w-full flex flex-col md:flex-col gap-5 items-center">
-          <div className="w-full flex flex-col md:flex-row gap-6 md:gap-10">
+          <div className="w-full flex flex-col md:flex-row gap-6 md:gap-10 xl:max-w-min">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -368,7 +368,7 @@ const Product = () => {
             </motion.div>
           </div>
 
-          <div className="w-full md:flex flex-col md:flex-row gap-6 md:gap-10 hidden">
+          <div className="w-full md:flex flex-col md:flex-row gap-6 md:gap-10 hidden xl:max-w-min">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
