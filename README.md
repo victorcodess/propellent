@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+# Propellent — Website for Startups
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Propellent is a website built for software startups and small businesses to showcase their services and mark their online presence.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** React, TypeScript, Tailwind CSS, Framer Motion.
 
-## Expanding the ESLint configuration
+**Hosting:** Vercel.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Screenshots & Demo
 
-- Configure the top-level `parserOptions` property like this:
+![App Screenshot](https://media.contra.com/image/upload/c_limit,fl_lossy,w_850/v1717248423/nvhftl0fxijufmurzrly.png)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+![App Screenshot](https://media.contra.com/image/upload/c_limit,fl_lossy,w_850/v1717297055/r7k1jfrqvk3oyjnxdig2.png)
+
+![App Screenshot](https://media.contra.com/image/upload/c_limit,fl_lossy,w_850/v1717297083/mmeeqa6etyz4alffts5o.png)
+
+[View Live Demo](https://propellent.vercel.app/)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/victorcodess/propellent
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Go to the project directory
+
+```bash
+  cd propellent
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Contributing & Usage
+
+This project is open source, and you are welcome to use the code or parts of the code for your own site. I encourage you to modify the theme and components to make it your own.
+
+If you are using the site’s codebase largely unmodified, please credit me as the developer of the website.
+
+If you have any questions or concerns, please feel free to contact me on [Twitter.](https://twitter.com/victorwill__) I am always happy to help!
+
+
+## Feedback
+
+While I would not be accepting contributions or pull requests at this time, I appreciate your feedback on this project. If you have any suggestions or questions, please don’t hesitate to reach out to me on [Twitter.](https://twitter.com/victorwill__) Your feedback is valuable and will help me improve.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
