@@ -12,7 +12,7 @@ const Footer = () => {
         </h2>
       </Link>
 
-      {/* <div className="w-full text-center sm:flex items-center justify-center gap-[5px] be-vietnam-pro-regular md:text-[14px] md:leading-[18.9px] md:tracking-[-0.28px] text-[16px] leading-[23.2px] tracking-[-0.32px]">
+      <div className="w-full text-center sm:flex items-center justify-center gap-[5px] be-vietnam-pro-regular md:text-[14px] md:leading-[18.9px] md:tracking-[-0.28px] text-[16px] leading-[23.2px] tracking-[-0.32px]">
         <p>
           Design by
           <a
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
           - Copyright 2024
         </p>
-      </div> */}
+      </div>
 
       <Link
         to="https://andrea-montini.lemonsqueezy.com/"
